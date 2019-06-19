@@ -1,0 +1,44 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<a-scene stats="true">
+  <a-asset>
+    <img id="sky" src="../assets/images/currency.png" />
+  </a-asset>
+  <a-entity gltf-model="#tree" scale="0.01 0.01 0.01"></a-entity>
+
+  <a-sky color="white"></a-sky>
+  <a-plane src="#sky"></a-plane>
+  <a-box
+    position="0 2.25 -2"
+    scale="1 .5 1"
+    color="red"
+    dynamic-body
+    force-pushable
+  ></a-box>
+  <a-box
+    position="0 2 -2"
+    color="white"
+    scale=".8 .2 1"
+    depth="1.02"
+    dynamic-body
+    force-pushable
+  ></a-box>
+  <a-box
+    position="0 1.75 -2"
+    scale="1 .5 1"
+    color="black"
+    dynamic-body
+    force-pushable
+  ></a-box>
+  <a-text
+    position="-1 1.2 -2"
+    text="color:black"
+    value="SOCIETE GENERALE"
+    material=""
+  ></a-text>
+  <a-text
+    position="-0.75 1 -2"
+    text="color: black"
+    value="Private Banking"
+  ></a-text>
+</a-scene>
+<router-outlet></router-outlet>
